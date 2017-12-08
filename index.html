@@ -13,7 +13,7 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="assets/aos/aos.css">
   <link rel="stylesheet" href="assets/css/hover.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/quote.css">
@@ -29,16 +29,17 @@ animejs.com
       <div class="image hvr-grow"><img src="assets/img/pfp.png" alt="" width="250" height="250"></div>
       <div class="navbar">
           <div class="links">
-            <div class="link"><button class="hvr-hang">Alden Demello - <!--made with <i class="fa fa-heart" aria-hidden="true"></i> and <i class="fa fa-code" aria-hidden="true"></i> --></button></div>
+            <div class="link"><button class="hvr-hang">Alden Demello <!-- -made with <i class="fa fa-heart" aria-hidden="true"></i> and <i class="fa fa-code" aria-hidden="true"></i> --></button></div>
               <div class="linkdd dropdown">
                 <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
                   <div class="dropdown-content">
 
                     <a class="arrow"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
-                    <a href="#">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">PORTFOLIO</a>
-                    <a href="contact.html">CONTACT</a>
+                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+                    <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> ABOUT</a>
+                    <a href="#"><i class="fa fa-book" aria-hidden="true"></i> PORTFOLIO</a>
+                    <a href="contact.html"><i class="fa fa-address-card" aria-hidden="true"></i> CONTACT</a>
+                    <a href="https://github.com/aldenjd"><i class="fa fa-github" aria-hidden="true"></i> GITHUB</a>
 
                   </div>
               </div>
@@ -46,7 +47,7 @@ animejs.com
           </div>
 
       <!-- Quote Generator -->
-      <div id="container">
+      <div id="container" data-aos="fade-in">
 		<h2 class="hvr-underline-from-left">Before we start with the nitty gritty, let's read a quote.</h2>
 			<div id="quoteContainer">
 				<p></p>
@@ -57,13 +58,24 @@ animejs.com
 		</div>
 	</div><!--END -->
 
+    <div class="Scroll">
+        <button type="button" name="button" class="buttonscroll"><a href="#home"><i class="fa fa-chevron-down" aria-hidden="true"></i></a></button>
+      </div>
 
-    <div class="home-content">
-  <!--  <p><i class="fa fa-home" aria-hidden="true"></i><br>
+<!--    <div id="home" data-aos="fade-in-zoom">
+  <p><i class="fa fa-home" aria-hidden="true"></i><br>
       Hey! I'm Alden.
-    </p> -->
-    </div>
+    </p>
+  </div> -->
+  <br>
+
+  
 
   <script type="text/javascript" src="assets/js/index.js"></script>
+  <script type="text/javascript" src="assets/aos/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init()
+    duration: 1200;
+  </script>
 </body>
 </html>
