@@ -1,8 +1,7 @@
 /* Variables */
 
 html, body {
-  background-color: #14171A;
-
+  background: #14171A;
 }
 /*body::-webkit-scrollbar {
     width: 10px;
@@ -16,13 +15,11 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 } */
-.container {
-    background-color: #14171A;
-}
+
 .navbar{
    height: 100px;
    max-width: 1000px;
-   background: #3333;
+   background-color: #3333;
    margin: 10px auto;
    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
    display: flex;
@@ -118,9 +115,6 @@ button {
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -163,18 +157,51 @@ a {
   font-family: 'Anton', sans-serif;
 }
 
-/* Scroll Stuff */
-.Scroll {
+p.about {
+  color: white;
   text-align: center;
 }
 
-.Scroll a {
-  color: white;
+.row {
+  text-align: center;
+  padding: 0px 50px 50px 0px;
+}
+.column {
+  color: gray;
+    float: left;
+    width: 50%;
+    text-align: left;
 }
 
-.Scroll a:hover {
-  color: black;
-  outline: black;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ .info-list {
+	list-style: none;
+	margin-left: 0;
+}
+ .info-list li {
+	padding: 0 0 1.5rem 0;
+	margin-bottom: .6rem;
+}
+ .info-list li strong {
+	font-family: "poppins-bold", sans-serif;
+	color: #313131;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+ .info-list li span {
+	display: block;
+	font-family: "poppins-regular", sans-serif;
+	color: #888888;
+	font-size: 1.5rem;
+	line-height: 1;
 }
 
 .spacer {
@@ -185,7 +212,7 @@ a {
   text-align: center;
   color: white;
   font-family: 'Abel', sans-serif;
-  font-size: 50px;
+  font-size: 35px;
 }
 /* Card */
 
